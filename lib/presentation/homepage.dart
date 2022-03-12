@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
               child: Text(
                 "heading",
                 style: TextStyle(
-                  fontSize: 50,
+                  fontSize: 30,
                   color: Colors.blueGrey,
                   fontWeight: FontWeight.bold
                 ),
