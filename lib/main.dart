@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/presentation/Mentors%20Module/mentorsPage.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:unicons/unicons.dart';
@@ -23,10 +24,7 @@ class _ExampleState extends State<Example> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Mentors',
-      style: optionStyle,
-    ),
+    MentorsPage(),
     Text(
       'Messages',
       style: optionStyle,
