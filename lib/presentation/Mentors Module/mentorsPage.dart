@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:flutter/rendering.dart';
+import 'package:unicons/unicons.dart';
 
 class MentorsPage extends StatefulWidget {
   const MentorsPage({Key? key}) : super(key: key);
@@ -40,251 +42,404 @@ class _MentorsPageState extends State<MentorsPage> {
             children: [
               Row(
                 children: [
-                  Text("Mentors trending right now."),
-                ],
-              ),
-              Stack(
-                children: [
-                  Container(
-                    
-                    
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-//
-
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(14),
-                          topRight: Radius.circular(14),
-                          topLeft:  Radius.circular(14),
-                          bottomLeft:  Radius.circular(14),
-                        ),
-                      ),
-                      margin: EdgeInsets.only(
-                        left: 9.0,
-                      ),
-                      child: Column(
-                        children: [
-                          CarouselSlider(
-                            items: [
-//              main slide card
-                              Stack(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 0.0,
-                                    ),
-                                    child: Container(
-                                      margin:
-                                          EdgeInsets.only(bottom: 0, right: 0),
-                                      height: mainCardHeight,
-                                      decoration: BoxDecoration(
-//
-                                        color: kPink.withOpacity(0.8),
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(14),
-                                        ),
-                                      ),
-                                      child: Container(
-                                        margin: EdgeInsets.only(
-                                          left: 0.0,
-                                        ),
-                                        height: mainCardHeight,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: BorderRadius.only(
-                                            bottomRight: Radius.circular(14),
-                                            topRight: Radius.circular(14),
-                                              topLeft:  Radius.circular(14),
-                          bottomLeft:  Radius.circular(14),
-                                          ),
-                                        ),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          courseCodePadding,
-                                                      child: FittedBox(
-                                                        fit: BoxFit.scaleDown,
-                                                        child: Text(
-                                                          "Exam Type",
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Padding(
-                                                  padding: courseNamePadding,
-                                                  child: Text(
-                                                    "Exam Type",
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.only(
-                                                  left: 15.0, bottom: 10.0),
-                                              child: Row(
-                                                children: [
-                                                  Text(
-                                                    "Exam Type",
-                                                  ),
-                                                  FittedBox(
-                                                    fit: BoxFit.scaleDown,
-                                                    child: Text(
-                                                      "Exam Type",
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-
-                              Stack(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                      left: 0.0,
-                                    ),
-                                    child: Container(
-                                      margin:
-                                          EdgeInsets.only(bottom: 0, right: 0),
-                                      height: mainCardHeight,
-                                      decoration: BoxDecoration(
-//
-                                        color: kPink.withOpacity(0.8),
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(14),
-                                        ),
-                                      ),
-                                      child: Container(
-                                        margin: EdgeInsets.only(
-                                          left: 0.0,
-                                        ),
-                                        height: mainCardHeight,
-                                        decoration: BoxDecoration(
-                                          color: Colors.white,
-                                          borderRadius: BorderRadius.only(
-                                            bottomRight: Radius.circular(14),
-                                            topRight: Radius.circular(14),
-                                              topLeft:  Radius.circular(14),
-                          bottomLeft:  Radius.circular(14),
-                                          ),
-                                        ),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  children: [
-                                                    Padding(
-                                                      padding:
-                                                          courseCodePadding,
-                                                      child: FittedBox(
-                                                        fit: BoxFit.scaleDown,
-                                                        child: Text(
-                                                          "Exam Type",
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Padding(
-                                                  padding: courseNamePadding,
-                                                  child: Text(
-                                                    "Exam Type",
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.only(
-                                                  left: 15.0, bottom: 10.0),
-                                              child: Row(
-                                                children: [
-                                                  Text(
-                                                    "Exam Type",
-                                                  ),
-                                                  FittedBox(
-                                                    fit: BoxFit.scaleDown,
-                                                    child: Text(
-                                                      "Exam Type",
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-
-//              second card
-                             
-                            ],
-                            options: CarouselOptions(
-                                height: mainCardHeight,
-                                viewportFraction: 1,
-                                enableInfiniteScroll: false,
-                                reverse: false,
-                                autoPlay: false,
-                                enlargeCenterPage: false,
-                                scrollDirection: Axis.horizontal,
-                                onPageChanged: (index, reason) {
-                                  setState(() {
-                                    _current = index;
-                                  });
-                                }),
-                            carouselController: buttonCarouselController,
-                          ),
-                          DotsIndicator(
-                            dotsCount: 2,
-                            position: _current.toDouble(),
-                            decorator: DotsDecorator(
-                                color: Colors.grey, // Inactive color
-                                activeColor: kPink.withOpacity(0.8),
-                                size: const Size.square(5.0),
-                                activeSize: const Size(10.0, 5.0),
-                                activeShape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(5.0))),
-                          ),
-                        ],
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "Trending Seniors",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: darkBG,
                       ),
                     ),
                   ),
                 ],
               ),
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Stack(
+                  children: [
+                    Container(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+//
+
+                          borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(14),
+                            topRight: Radius.circular(14),
+                            topLeft: Radius.circular(14),
+                            bottomLeft: Radius.circular(14),
+                          ),
+                        ),
+                        margin: EdgeInsets.only(
+                          left: 9.0,
+                        ),
+                        child: Column(
+                          children: [
+                            CarouselSlider(
+                              items: [
+//              main slide card
+                                Stack(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 0.0,
+                                      ),
+                                      child: Container(
+                                        margin: EdgeInsets.only(
+                                            bottom: 0, right: 0),
+                                        height: mainCardHeight,
+                                        decoration: BoxDecoration(
+//
+                                          color: kPink.withOpacity(0.8),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(14),
+                                          ),
+                                        ),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                            left: 0.0,
+                                          ),
+                                          height: mainCardHeight,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.only(
+                                              bottomRight: Radius.circular(14),
+                                              topRight: Radius.circular(14),
+                                              topLeft: Radius.circular(14),
+                                              bottomLeft: Radius.circular(14),
+                                            ),
+                                          ),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                            courseCodePadding,
+                                                        child: FittedBox(
+                                                          fit: BoxFit.scaleDown,
+                                                          child: Text(
+                                                            "Exam Type",
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: courseNamePadding,
+                                                    child: Text(
+                                                      "Exam Type",
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(
+                                                    left: 15.0, bottom: 10.0),
+                                                child: Row(
+                                                  children: [
+                                                    Text(
+                                                      "Exam Type",
+                                                    ),
+                                                    FittedBox(
+                                                      fit: BoxFit.scaleDown,
+                                                      child: Text(
+                                                        "Exam Type",
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+                                Stack(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 0.0,
+                                      ),
+                                      child: Container(
+                                        margin: EdgeInsets.only(
+                                            bottom: 0, right: 0),
+                                        height: mainCardHeight,
+                                        decoration: BoxDecoration(
+//
+                                          color: kPink.withOpacity(0.8),
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(14),
+                                          ),
+                                        ),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                            left: 0.0,
+                                          ),
+                                          height: mainCardHeight,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white,
+                                            borderRadius: BorderRadius.only(
+                                              bottomRight: Radius.circular(14),
+                                              topRight: Radius.circular(14),
+                                              topLeft: Radius.circular(14),
+                                              bottomLeft: Radius.circular(14),
+                                            ),
+                                          ),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                            courseCodePadding,
+                                                        child: FittedBox(
+                                                          fit: BoxFit.scaleDown,
+                                                          child: Text(
+                                                            "Exam Type",
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  Padding(
+                                                    padding: courseNamePadding,
+                                                    child: Text(
+                                                      "Exam Type",
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(
+                                                    left: 15.0, bottom: 10.0),
+                                                child: Row(
+                                                  children: [
+                                                    Text(
+                                                      "Exam Type",
+                                                    ),
+                                                    FittedBox(
+                                                      fit: BoxFit.scaleDown,
+                                                      child: Text(
+                                                        "Exam Type",
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+
+//              second card
+                              ],
+                              options: CarouselOptions(
+                                  height: mainCardHeight,
+                                  viewportFraction: 1,
+                                  enableInfiniteScroll: false,
+                                  reverse: false,
+                                  autoPlay: false,
+                                  enlargeCenterPage: false,
+                                  scrollDirection: Axis.horizontal,
+                                  onPageChanged: (index, reason) {
+                                    setState(() {
+                                      _current = index;
+                                    });
+                                  }),
+                              carouselController: buttonCarouselController,
+                            ),
+                            DotsIndicator(
+                              dotsCount: 2,
+                              position: _current.toDouble(),
+                              decorator: DotsDecorator(
+                                  color: Colors.grey, // Inactive color
+                                  activeColor: kPink.withOpacity(0.8),
+                                  size: const Size.square(5.0),
+                                  activeSize: const Size(10.0, 5.0),
+                                  activeShape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(5.0))),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "Search by category",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.grey.withOpacity(0.8),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                height: 40,
+                child: Expanded(
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Padding(
+                          padding:
+                                const EdgeInsets.only(left: 5.0, right: 5.0),
+                          child: Container(
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey.withOpacity(0.6),
+                                  width: 2,
+                                ),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "College",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Colors.grey.withOpacity(0.8),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8.0),
+                                    child: Icon(
+                                      UniconsLine.arrow_circle_down,
+                                      size: 15.0,
+                                    ),
+                                  ),
+                                ],
+                              ))),
+                              Padding(
+                          padding:
+                                const EdgeInsets.only(left: 5.0, right: 5.0),
+                          child: Container(
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey.withOpacity(0.6),
+                                  width: 2,
+                                ),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Organisation",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Colors.grey.withOpacity(0.8),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8.0),
+                                    child: Icon(
+                                      UniconsLine.arrow_circle_down,
+                                      size: 15.0,
+                                    ),
+                                  ),
+                                ],
+                              ))),
+                              Padding(
+                          padding:
+                              const EdgeInsets.only(left: 5.0, right: 5.0),
+                          child: Container(
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey.withOpacity(0.6),
+                                  width: 2,
+                                ),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      "Skills",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                        color: Colors.grey.withOpacity(0.8),
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 8.0),
+                                    child: Icon(
+                                      UniconsLine.arrow_circle_down,
+                                      size: 15.0,
+                                    ),
+                                  ),
+                                ],
+                              ))),
+                              
+                    ],
+                  ),
+                ),
+              ),
+              Row(children: [
+                Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text(
+                      "Available Seniors",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: darkBG.withOpacity(0.8),
+                      ),
+                    ),
+                  ),
+              ],)
+            
             ],
           ),
         ),
